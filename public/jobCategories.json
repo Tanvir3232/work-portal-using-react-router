@@ -1,21 +1,21 @@
 [
     {
-      "category": "Graphic Design Jobs",
+      "name": "Graphic Design Jobs",
       "totalJobs": 120,
       "icon": "https://cdn-icons-png.flaticon.com/512/719/719775.png"
     },
     {
-      "category": "Event Planning Jobs",
+      "name": "Event Planning Jobs",
       "totalJobs": 145,
       "icon": "https://cdn-icons-png.flaticon.com/512/46/46789.png"
     },
     {
-      "category": "Education Jobs",
+      "name": "Education Jobs",
       "totalJobs": 270,
       "icon":"https://cdn-icons-png.flaticon.com/512/10/10655.png"
-    }
+    },
     {
-      "category": "ICT",
+      "name": "ICT",
       "totalJobs": 170,
       "icon":"https://cdn-icons-png.flaticon.com/512/1255/1255558.png"
     }
