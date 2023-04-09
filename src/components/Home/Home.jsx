@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import JobCategory from '../JobCategory/JobCategory';
+import { JobContext } from '../../App';
+import Job from '../Job/Job';
 
 const Home = () => {
     const jobCategories = useLoaderData();
-    console.log(jobCategories);
+    const jobs = useContext(JobContext);
+    const [seeMore,setSeeMore] = useState(true)
     return (
         <div>
             {/* Banner section */}
@@ -30,6 +33,27 @@ const Home = () => {
                         ></JobCategory>)
                     }
                 </div>
+            </div>
+            {/* Featured Jobs Section */}
+            <div className='mt-36'>
+                <h1 className='text-center my-3 font-bold text-5xl'>Featured Jobs</h1>
+                <p className='text-center'>Explore thousands of job opportunities with all the information you need. Its your future</p>
+                <div className='grid grid-cols-2 gap-6'>
+                {  seeMore
+                    ?jobs.slice(0,4).map(job=><Job
+                       key={job.id}
+                       job={job}
+                    ></Job>)
+                    :jobs.map(job=><Job
+                        key={job.id}
+                        job={job}
+                     ></Job>)
+                }
+                </div>
+                {
+                    seeMore && 
+                    <button onClick={()=>setSeeMore(false)} className='btn-primary my-5'>See More</button>
+                }
             </div>
         </div>
     );

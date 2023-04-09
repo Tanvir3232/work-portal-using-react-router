@@ -9,11 +9,13 @@ import {
 import Home from './components/Home/Home';
 import Statistics from './components/Statistics/Statistics';
 import Blog from './components/Blog/Blog';
+import { jobAndAppliedJobsData } from './components/JobsData/JobsAndAppliedJobs';
 
 const router = createBrowserRouter([
   {
     path:'/',
     element:<App></App>,
+    loader:jobAndAppliedJobsData,
     children:[
       {
         path:'/',

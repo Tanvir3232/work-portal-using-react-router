@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "companyLogo": "https://img.freepik.com/free-vector/purple-abstract-geometrical-logo-3d_1043-55.jpg",
+        "jobTitle": "Web Developer",
+        "companyName": "Tech  Inc.",
+        "remoteOrOnsite": "Remote",
+        "location": "New York, NY",
+        "fullTimeOrPartTime": "Full-time",
+        "salary": "$70,000 - $90,000",
+        "jobDescription": "We are seeking an experienced Web Developer to join our team. The ideal candidate will have strong programming skills and experience with front-end and back-end development.",
+        "jobResponsibility": "Develop and maintain web applications using modern programming languages and frameworks. Collaborate with designers and other developers to ensure project requirements are met. Write clean, maintainable code that is optimized for performance and scalability.",
+        "educationalRequirements": "Bachelor's degree in Computer Science or related field.",
+        "experiences": "Minimum of 3 years of experience in web development.",
+        "contactInformation": {
+            "phone": "555-555-5545",
+            "email": "jobs@abcinc.com"
+        }
+    },
+    {
+        "id": 2,
+        "companyLogo": "https://img.freepik.com/premium-psd/3d-luxury-logo-mockup-template_528542-478.jpg",
+        "jobTitle": "Graphic Designer",
+        "companyName": "World Arrow Corp.",
+        "remoteOrOnsite": "Onsite",
+        "location": "San Francisco, CA",
+        "fullTimeOrPartTime": "Full-time",
+        "salary": "$60,000 - $80,000",
+        "jobDescription": "We are looking for a talented Graphic Designer to join our team. The ideal candidate will have a strong portfolio and experience with designing marketing materials, web graphics, and other creative assets.",
+        "jobResponsibility": "Design and produce visual assets for marketing campaigns, social media, and website. Collaborate with writers and other designers to create visually compelling content. Ensure all designs meet brand guidelines and are optimized for different mediums and devices.",
+        "educationalRequirements": "Bachelor's degree in Graphic Design or related field.",
+        "experiences": "Minimum of 2 years of experience in graphic design.",
+        "contactInformation": {
+            "phone": "555-555-5465",
+            "email": "jobs@xyzcorp.com"
+        }
+    },
+    {
+        "id": 3,
+        "companyLogo": "https://img.freepik.com/premium-vector/logo-with-ai-file_721332-2.jpg",
+        "jobTitle": "Marketing Manager",
+        "companyName": "ALpha Co.",
+        "remoteOrOnsite": "Remote",
+        "location": "Chicago, IL",
+        "fullTimeOrPartTime": "Full-time",
+        "salary": "$80,000 - $100,000",
+        "jobDescription": "We are seeking an experienced Marketing Manager to lead our marketing team. The ideal candidate will have strong leadership skills and experience with developing and executing successful marketing campaigns.",
+        "jobResponsibility": "Develop and implement marketing strategies that align with company goals. Lead and manage a team of marketers to execute campaigns across multiple channels. Analyze and report on campaign performance, and make recommendations for optimization and improvement.",
+        "educationalRequirements": "Bachelor's degree in Marketing or related field.",
+        "experiences": "Minimum of 5 years of experience in marketing.",
+        "contactInformation": {
+            "phone": "555-555-4567",
+            "email": "jobs@123co.com"
+        }
+    },
+    {
+        "id": 4,
+        "companyLogo": "https://img.freepik.com/free-vector/connection-vector-logo-template_460848-8078.jpg",
+        "jobTitle": "Graphic Designer",
+        "companyName": "Creative Design",
+        "remoteOrOnsite": "Remote",
+        "location": "Anywhere",
+        "fullTimeOrPartTime": "Full-time",
+        "salary": "$50,000 - $70,000",
+        "jobDescription": "We are looking for a skilled graphic designer to join our team. The ideal candidate should have a strong portfolio of design work, and experience working with Adobe Creative Suite.",
+        "jobResponsibility": "- Designing marketing materials, such as flyers, posters, and brochures\n- Creating and editing graphics for websites and social media\n- Collaborating with the team to develop creative concepts and designs\n- Presenting designs to clients and making revisions based on feedback",
+        "educationalRequirements": "Bachelor's degree in graphic design or a related field",
+        "experiences": "2+ years of experience in graphic design",
+        "contactInformation": {
+            "phone": "555-555-9870",
+            "email": "hr@creativeagency.com"
+        }
+    },
+    {
+        "id": 5,
+        "companyLogo": "https://img.freepik.com/premium-vector/elegant-t-letter-tech-logo-template-full-color_172113-191.jpg",
+        "jobTitle": "Software Developer",
+        "companyName": "Tech Startup",
+        "remoteOrOnsite": "Onsite",
+        "location": "San Francisco, CA",
+        "fullTimeOrPartTime": "Full-time",
+        "salary": "$80,000 - $120,000",
+        "jobDescription": "We are looking for a talented software developer to join our team. The ideal candidate should have experience working with JavaScript, Node.js, and React.",
+        "jobResponsibility": "- Developing and maintaining web applications using modern web technologies\n- Collaborating with other developers and stakeholders to identify requirements and develop solutions\n- Writing clean, efficient, and maintainable code\n- Participating in code reviews and contributing to a positive team culture",
+        "educationalRequirements": "Bachelor's degree in computer science or a related field",
+        "experiences": "3+ years of experience in software development",
+        "contactInformation": {
+            "phone": "555-555-4523",
+            "email": "hr@techstartup.com"
+        }
+    },
+    {
+        "id": 6,
+        "companyLogo": "https://img.freepik.com/free-vector/branding-identity-corporate-vector-abstract-logo-design_460848-13870.jpg",
+        "jobTitle": "Marketing Manager",
+        "companyName": "Growth Co",
+        "remoteOrOnsite": "Onsite",
+        "location": "New York, NY",
+        "fullTimeOrPartTime": "Full-time",
+        "salary": "$90,000 - $120,000",
+        "jobDescription": "Growth Co is seeking a marketing manager to lead our marketing efforts. The ideal candidate will have experience creating and executing marketing campaigns that drive growth.",
+        "jobResponsibility": "Responsibilities include developing marketing strategies, managing campaigns, and collaborating with cross-functional teams.",
+        "educationalRequirements": "Bachelor's degree in Marketing or a related field",
+        "experiences": "At least 5 years of experience in marketing",
+        "contactInformation": {
+            "phone": "555-555-1980",
+            "email": "careers@growthco.com"
+        }
+    }
+]
