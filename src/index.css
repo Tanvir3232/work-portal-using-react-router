@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.my-container{
+  @apply mx-12 py-3 
+}
+.btn-primary{
+  @apply bg-purple-500 px-6 py-2 text-white rounded-md text-lg font-medium
+}
