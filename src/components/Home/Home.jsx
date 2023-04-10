@@ -9,7 +9,7 @@ const Home = () => {
     const jobs = useContext(JobContext);
     const [seeMore,setSeeMore] = useState(true)
     return (
-        <div>
+        <div className='my-container'>
             {/* Banner section */}
             <div className='my-5 flex items-center justify-between'>
                 <div className='w-1/2 text-left'>
@@ -50,10 +50,12 @@ const Home = () => {
                      ></Job>)
                 }
                 </div>
+                <div className=' text-center'>
                 {
                     seeMore && 
                     <button onClick={()=>setSeeMore(false)} className='btn-primary my-5'>See More</button>
                 }
+                </div>
             </div>
         </div>
     );
