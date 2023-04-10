@@ -20,7 +20,7 @@ const AppliedJob = () => {
                     <h1 className='text-3xl font-bold -mt-32 text-Center'>Applied Job</h1>
                 </div>
             </div>
-            <div className='my-container'>
+            <div className='my-container px-6'>
                 {
                     appliedJob.map(job=><AppliedJobCard
                       key={job.id}
