@@ -12,12 +12,14 @@ import Blog from './components/Blog/Blog';
 import { jobAndAppliedJobsData } from './components/JobsData/JobsAndAppliedJobs';
 import JobDetails from './components/JobDetails/JobDetails';
 import AppliedJob from './components/AppliedJob/AppliedJob';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 
 const router = createBrowserRouter([
   {
     path:'/',
     element:<App></App>,
+    errorElement:<ErrorPage></ErrorPage>,
     loader:jobAndAppliedJobsData,
     children:[
       {

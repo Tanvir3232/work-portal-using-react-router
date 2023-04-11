@@ -1,17 +1,19 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { getAppliedJob } from '../../utilities/fakeDB';
 import { JobContext } from '../../App';
 import AppliedJobCard from '../AppliedJobCard/AppliedJobCard';
 
 const AppliedJob = () => {
-    const storedAppliedJob = getAppliedJob();
+    const getStoredAppliedJob = getAppliedJob();
     const jobs = useContext(JobContext);
-    let appliedJob = [];
-    for(const id of storedAppliedJob){
+    let storedAppliedJob = [];
+    for(const id of getStoredAppliedJob){
         const foundAppliedJob = jobs.find(job=>job.id === id);
-        appliedJob.push(foundAppliedJob);
+        storedAppliedJob.push(foundAppliedJob);
     }
-   
+    const  [appliedJob,setAppliedJob] = useState(storedAppliedJob);
+
+    const viewOnsiteJobs = () =>{}
     return (
         <div>
             <div className='mt-6 mb-24'>
@@ -21,6 +23,10 @@ const AppliedJob = () => {
                 </div>
             </div>
             <div className='my-container px-6'>
+                <div className='text-right'>
+                    <button onClick={viewOnsiteJobs} className='bg-blue-600 px-6 py-2 mr-1 text-white rounded-md text-lg font-medium hover:bg-blue-800'>Only Onsite</button>
+                    <button onClick={viewRemoteJobs} className='bg-orange-600 px-6 py-2 text-white rounded-md text-lg font-medium hover:bg-orange-800'>Only Remote</button>
+                </div>
                 {
                     appliedJob.map(job=><AppliedJobCard
                       key={job.id}
