@@ -13,7 +13,12 @@ const AppliedJob = () => {
     }
     const  [appliedJob,setAppliedJob] = useState(storedAppliedJob);
 
-    const viewOnsiteJobs = () =>{}
+    const viewOnsiteJobs = () =>{
+        
+    }
+    const viewRemoteJobs = () =>{
+
+    }
     return (
         <div>
             <div className='mt-6 mb-24'>
