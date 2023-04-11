@@ -9,9 +9,9 @@ const Home = () => {
     const jobs = useContext(JobContext);
     const [seeMore,setSeeMore] = useState(true)
     return (
-        <div className='md:my-container mx-8'>
+        <div className='md:mx-36 mx-8'>
             {/* Banner section */}
-            <div className='my-5 flex flex-col md:flex items-center justify-between'>
+            <div className='my-5 flex flex-col md:flex-row items-center justify-between'>
                 <div className='md:w-1/2 text-left'>
                     <h1 className='md:text-7xl text-3xl font-semibold'>One Step Closer To Your <span className='text-purple-500'>Dream Job</span></h1>
                     <p className='my-5'>Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>
