@@ -7,18 +7,18 @@ const AppliedJob = () => {
     const getStoredAppliedJob = getAppliedJob();
     const jobs = useContext(JobContext);
     let storedAppliedJob = [];
-    for(const id of getStoredAppliedJob){
-        const foundAppliedJob = jobs.find(job=>job.id === id);
+    for (const id of getStoredAppliedJob) {
+        const foundAppliedJob = jobs.find(job => job.id === id);
         storedAppliedJob.push(foundAppliedJob);
     }
-    const  [appliedJob,setAppliedJob] = useState(storedAppliedJob);
+    const [appliedJob, setAppliedJob] = useState(storedAppliedJob);
 
-    const viewOnsiteJobs = () =>{
-        const onsiteJobs = storedAppliedJob.filter(job=>job.remoteOrOnsite == 'Onsite');
+    const viewOnsiteJobs = () => {
+        const onsiteJobs = storedAppliedJob.filter(job => job.remoteOrOnsite == 'Onsite');
         setAppliedJob(onsiteJobs);
     }
-    const viewRemoteJobs = () =>{
-        const remoteJobs = storedAppliedJob.filter(job=>job.remoteOrOnsite == 'Remote');
+    const viewRemoteJobs = () => {
+        const remoteJobs = storedAppliedJob.filter(job => job.remoteOrOnsite == 'Remote');
         setAppliedJob(remoteJobs);
     }
     return (
@@ -30,14 +30,19 @@ const AppliedJob = () => {
                 </div>
             </div>
             <div className='my-container px-6'>
-                <div className='text-right'>
-                    <button onClick={viewOnsiteJobs} className='bg-blue-600 px-6 py-2 mr-1 text-white rounded-md text-lg font-medium hover:bg-blue-800'>Only Onsite</button>
-                    <button onClick={viewRemoteJobs} className='bg-orange-600 px-6 py-2 text-white rounded-md text-lg font-medium hover:bg-orange-800'>Only Remote</button>
-                </div>
                 {
-                    appliedJob.map(job=><AppliedJobCard
-                      key={job.id}
-                      job={job}
+                    appliedJob.length>0
+                    ?<div className='text-right'>
+                            <button onClick={viewOnsiteJobs} className='bg-blue-600 px-6 py-2 mr-1 text-white rounded-md text-lg font-medium hover:bg-blue-800'>Only Onsite</button>
+                            <button onClick={viewRemoteJobs} className='bg-orange-600 px-6 py-2 text-white rounded-md text-lg font-medium hover:bg-orange-800'>Only Remote</button>
+                     </div>
+                    : <div className='text-center text-lg font-medium'>You have not applied for any job!</div>
+                   
+                }
+                {
+                    appliedJob.map(job => <AppliedJobCard
+                        key={job.id}
+                        job={job}
                     ></AppliedJobCard>)
                 }
             </div>

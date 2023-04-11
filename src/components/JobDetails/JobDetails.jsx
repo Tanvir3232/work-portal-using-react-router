@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import { JobContext } from '../../App';
 import { CalendarDaysIcon, CurrencyDollarIcon, EnvelopeIcon, MapPinIcon, PhoneIcon } from '@heroicons/react/24/solid';
 import { getAppliedJob, storeApplyJob } from '../../utilities/fakeDB';
+import { toast } from 'react-hot-toast';
 
 const JobDetails = () => {
     const { jobId } = useParams();
@@ -14,9 +15,10 @@ const JobDetails = () => {
         const appliedJob = getAppliedJob();
         const exists = appliedJob.find(existingJobId => existingJobId === id);
         if(exists){
-            alert('already added');
+            toast.error("it's already added");
         }else{
             storeApplyJob(id);
+            toast.success("Successfully added to applied jobs");
         }
        
     }
