@@ -8,3 +8,6 @@
 .btn-primary{
   @apply bg-purple-600 px-6 py-2 text-white rounded-md text-lg font-medium hover:bg-purple-800
 }
+.menu-active{
+  @apply  text-blue-600 border-b-2 border-indigo-500 
+}

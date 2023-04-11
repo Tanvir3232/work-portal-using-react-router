@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import {  NavLink } from 'react-router-dom';
 import { BookOpenIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,10 +10,11 @@ const Header = () => {
                     Work<span className='text-blue-500'>Portal</span>
                 </div>
                 <nav className='flex  gap-6 text-lg font-semibold'>
-                    <Link to="/">Home</Link>
-                    <Link to="/statistics">Statistics</Link>
-                    <Link to="/applied-job/">Applied Job</Link>
-                    <Link to="/blog">Blog</Link>
+                    <NavLink to="/" className={({ isActive}) =>isActive ? "menu-active" : ""}>
+                        Home</NavLink >
+                    <NavLink to="/statistics" className={({ isActive}) =>isActive ? "menu-active" : ""}>Statistics</NavLink >
+                    <NavLink to="/applied-job/" className={({ isActive}) =>isActive ? "menu-active" : ""}>Applied Job</NavLink >
+                    <NavLink to="/blog" className={({ isActive}) =>isActive ? "menu-active" : ""}>Blog</NavLink >
                 </nav>
                 <div>
                     <button className='btn-primary'>Star Applying</button>
@@ -26,18 +27,18 @@ const Header = () => {
                         Work<span className='text-blue-500'>Portal</span>
                     </div>
                     <nav>
-                        <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                        <button className='relative' onClick={() => setIsMenuOpen(!isMenuOpen)}>
                             {
-                                isMenuOpen ? <XMarkIcon className='w-6'></XMarkIcon> : <Bars3Icon className='w-6'></Bars3Icon>
+                                isMenuOpen ? <XMarkIcon className='w-6 -top-5 left-20 absolute'></XMarkIcon> : <Bars3Icon className='w-6'></Bars3Icon>
                             }
                         </button>
                         {
                             isMenuOpen && (
-                                <div className={`flex flex-col gap-6 text-lg font-semibold`}>
-                                    <Link to="/">Home</Link>
-                                    <Link to="/statistics">Statistics</Link>
-                                    <Link to="/applied-job/">Applied Job</Link>
-                                    <Link to="/blog">Blog</Link>
+                                <div className={`flex flex-col justify-center items-center gap-6 text-lg font-semibold`}>
+                                    <NavLink to="/" className={({ isActive}) =>isActive ? "menu-active" : ""}>Home</NavLink >
+                                    <NavLink to="/statistics" className={({ isActive}) =>isActive ? "menu-active" : ""}>Statistics</NavLink >
+                                    <NavLink to="/applied-job/" className={({ isActive}) =>isActive ? "menu-active" : ""}>Applied Job</NavLink >
+                                    <NavLink to="/blog" className={({ isActive}) =>isActive ? "menu-active" : ""}>Blog</NavLink >
                                 </div>
                             )
                         }
