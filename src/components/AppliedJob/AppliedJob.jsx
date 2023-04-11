@@ -14,10 +14,12 @@ const AppliedJob = () => {
     const  [appliedJob,setAppliedJob] = useState(storedAppliedJob);
 
     const viewOnsiteJobs = () =>{
-        
+        const onsiteJobs = storedAppliedJob.filter(job=>job.remoteOrOnsite == 'Onsite');
+        setAppliedJob(onsiteJobs);
     }
     const viewRemoteJobs = () =>{
-
+        const remoteJobs = storedAppliedJob.filter(job=>job.remoteOrOnsite == 'Remote');
+        setAppliedJob(remoteJobs);
     }
     return (
         <div>
