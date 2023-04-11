@@ -15,7 +15,7 @@ const Job = ({ job }) => {
                 <p className='px-3 py-1 rounded-md font-medium text-purple-500 border-2 border-gray-700'>{remoteOrOnsite}</p>
                 <p className='px-3 py-1 rounded-md font-medium text-purple-500 border-2 border-gray-700'>{fullTimeOrPartTime}</p>
             </div>
-            <div className='mb-5 flex gap-6'>
+            <div className='mb-5 md:flex gap-6'>
                 <p className='flex items-center gap-2'><MapPinIcon className="h-7 w-5 text-gray-500" /> {location} </p>
                 <p className='flex items-center gap-2'><CurrencyDollarIcon className="h-6 w-6 text-gray-500" /> Salary: {salary}</p>
             </div>
