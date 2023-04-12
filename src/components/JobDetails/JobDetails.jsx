@@ -15,10 +15,10 @@ const JobDetails = () => {
         const appliedJob = getAppliedJob();
         const exists = appliedJob.find(existingJobId => existingJobId === id);
         if(exists){
-            toast.error("it's already added");
+            toast.error("already applied");
         }else{
             storeApplyJob(id);
-            toast.success("Successfully added to applied jobs");
+            toast.success("Successfully applied");
         }
        
     }
@@ -30,7 +30,7 @@ const JobDetails = () => {
                     <h1 className='text-3xl font-bold -mt-32 text-Center'>Job Details</h1>
                 </div>
             </div>
-            <div className='flex flex-col md:flex-row gap-6 my-container'>
+            <div className='flex flex-col md:flex-row gap-6 md:mx-32 md:py-5 mx-8'>
                
                     <div className='md:w-2/3 w-full text-left text-lg'>
                         <p>

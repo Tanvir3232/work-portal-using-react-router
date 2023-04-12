@@ -6,9 +6,9 @@ const Statistics = () => {
 
 
     return (
-        <div className='my-12 my-container  divide-y-2'>
+        <div className='my-12   divide-y-2'>
             <h1 className='text-center font-bold text-3xl my-5'>1st to 8th Assignment Marks</h1>
-            <PieChart className=' mx-auto' width={400} height={320}>
+            <PieChart className='mx-auto' width={400} height={320}>
                 <Pie data={data} dataKey="mark" nameKey="name" cx="50%" cy="50%" outerRadius={150} fill='#ABDABB'>
 
                     {data.map((entry, index) => (
